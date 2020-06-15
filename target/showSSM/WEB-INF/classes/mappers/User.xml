@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mybaitis文件的命名空间，不重复 , 指定使用我们接口-->
+<mapper namespace = "com.hz.ssm.mapper.IndexMapper">
+
+    <select id="queryName" resultType="java.lang.String">
+
+        select Sname from student limit 0,1
+
+    </select>
+
+</mapper>
